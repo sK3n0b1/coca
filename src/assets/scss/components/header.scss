@@ -1,5 +1,6 @@
 .header {
   padding: 26px 0 22px;
+  background-color: transparent;
 
   @include mobile {
     padding: 22px 0 18px;
@@ -13,12 +14,10 @@
     position: relative;
     z-index: var(--z-index-4);
 
-
     & svg {
       @include mobile {
         width: 130px;
       }
-
 
       & path {
         &:not(:last-child) {
@@ -52,7 +51,10 @@
       background-color: var(--neutral-color-10);
       opacity: 0;
       visibility: hidden;
-      transition: left var(--transition), opacity var(--transition), visibility var(--transition);
+      transition:
+        left var(--transition),
+        opacity var(--transition),
+        visibility var(--transition);
 
       &--visible {
         left: 0;
@@ -70,6 +72,7 @@
     background-color: var(--neutral-color-130);
     transform: translateY(8px);
     transition: background-color var(--transition);
+    cursor: pointer;
 
     &::before {
       content: '';
@@ -95,6 +98,11 @@
       line-height: 150%;
       text-align: center;
       color: var(--neutral-color-140);
+
+      @include small-tablet {
+        top: -28px;
+        font-size: 20px;
+      }
     }
 
     &-checkbox {
@@ -135,6 +143,7 @@
 
     @include small-tablet {
       line-height: 200%;
+      font-size: 20px;
     }
 
     &::after {
