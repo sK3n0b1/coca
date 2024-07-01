@@ -4,10 +4,10 @@
 
   @include mini-desktop {
     padding: 77px 0 121px;
+  }
 
-    @include mobile {
-        min-height: calc(100dvh - 128px);
-    }
+  @include mobile {
+    min-height: calc(100dvh - 87px);
   }
 
   &::before {
@@ -74,7 +74,9 @@
   }
 
   &__left {
-    max-width: 594px;
+    @include mini-desktop {
+        max-width: 617px;
+    }
   }
 
   &__title {
@@ -107,6 +109,12 @@
 
   &__subtitle {
     margin-bottom: 69px;
+
+    & br {
+        @include mini-desktop {
+            display: none;
+        }
+    }
   }
 
   &__form {
@@ -238,7 +246,8 @@
     }
 
     &-body {
-      &-th {
+      &-td {
+        white-space: nowrap;
         font-weight: 700;
         font-size: 20px;
         line-height: 130%;
