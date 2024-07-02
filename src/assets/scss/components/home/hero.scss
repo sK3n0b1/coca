@@ -36,8 +36,8 @@
     bottom: 0;
     width: 525px;
     height: 525px;
-    filter: blur(180px);
     background: var(--success-color-70);
+    filter: blur(180px);
 
     @include mini-desktop {
       width: 325px;
@@ -56,9 +56,9 @@
   &::after {
     content: '';
     position: absolute;
-    border-radius: 50%;
-    display: inline-block;
     z-index: var(--z-index-0);
+    display: inline-block;
+    border-radius: 50%;
   }
 
   &__container {
@@ -92,13 +92,13 @@
     }
 
     @include tablet {
-      font-size: 60px;
       margin-bottom: 44px;
+      font-size: 60px;
     }
 
     @include mobile {
-      font-size: 48px;
       margin-bottom: 38px;
+      font-size: 48px;
     }
 
     @include small-mobile {
@@ -146,8 +146,8 @@
     }
 
     @include mobile {
-      max-width: 180px;
       min-width: 100px;
+      max-width: 180px;
     }
   }
 
@@ -171,8 +171,8 @@
   }
 
   &__sales {
-    padding: 20px;
     margin-bottom: 29px;
+    padding: 20px;
 
     @include small-desktop {
       max-width: 320px;
@@ -198,8 +198,8 @@
     position: absolute;
     top: -60px;
     right: -140px;
-    padding: 15px 18px;
     display: inline-block;
+    padding: 15px 18px;
 
     @include small-desktop {
       top: -140px;
@@ -246,10 +246,10 @@
 
     &-body {
       &-td {
-        white-space: nowrap;
         font-weight: 700;
         font-size: 20px;
         line-height: 130%;
+        white-space: nowrap;
         color: #fff;
 
         &:nth-child(1) {
