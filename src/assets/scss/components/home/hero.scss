@@ -26,8 +26,8 @@
     }
 
     @include small-tablet {
-        width: 251px;
-        height: 251px;
+      width: 251px;
+      height: 251px;
     }
   }
 
@@ -45,10 +45,10 @@
     }
 
     @include small-tablet {
-        top: 20px;
-        left: 40px;
-        width: 225px;
-        height: 235px;
+      top: 20px;
+      left: 40px;
+      width: 225px;
+      height: 235px;
     }
   }
 
@@ -75,7 +75,7 @@
 
   &__left {
     @include mini-desktop {
-        max-width: 617px;
+      max-width: 617px;
     }
   }
 
@@ -92,18 +92,18 @@
     }
 
     @include tablet {
-        font-size: 60px;
-        margin-bottom: 44px;
+      font-size: 60px;
+      margin-bottom: 44px;
     }
 
     @include mobile {
-        font-size: 48px;
-        margin-bottom: 38px;
+      font-size: 48px;
+      margin-bottom: 38px;
     }
 
     @include small-mobile {
-        margin-bottom: 30px;
-        font-size: 38px;
+      margin-bottom: 30px;
+      font-size: 38px;
     }
   }
 
@@ -111,9 +111,9 @@
     margin-bottom: 69px;
 
     & br {
-        @include mini-desktop {
-            display: none;
-        }
+      @include mini-desktop {
+        display: none;
+      }
     }
   }
 
@@ -126,8 +126,8 @@
     }
 
     @include small-mobile {
-        gap: 20px;
-        flex-direction: column;
+      gap: 20px;
+      flex-direction: column;
     }
   }
 
@@ -142,12 +142,12 @@
     background-color: transparent;
 
     @include small-tablet {
-        padding-bottom: 13px;
+      padding-bottom: 13px;
     }
 
     @include mobile {
-        max-width: 180px;
-        min-width: 100px;
+      max-width: 180px;
+      min-width: 100px;
     }
   }
 
@@ -156,9 +156,8 @@
     color: var(--neutral-color-10);
     background-color: var(--neutral-color-100);
 
-
     @include small-tablet {
-        padding: 12px 32px;
+      padding: 12px 32px;
     }
   }
 
@@ -167,7 +166,7 @@
     margin-right: 20px;
 
     @include mini-desktop {
-        display: none;
+      display: none;
     }
   }
 
