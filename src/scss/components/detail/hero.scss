@@ -1,0 +1,149 @@
+.detail {
+  @include flex-all-center;
+  padding: 80px 0 160px;
+
+  @include small-tablet {
+    padding: 60px 0 100px;
+  }
+
+  &__title {
+    margin-bottom: 48px;
+    max-width: 700px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+  }
+
+  &__top {
+    @include flex-all-between;
+    margin-bottom: 24px;
+    max-width: 940px;
+
+    @include mobile {
+      gap: 30px;
+      flex-direction: column;
+    }
+
+    &-author {
+      @include flex-all-center;
+      gap: 24px;
+
+      &-avatar {
+        overflow: hidden;
+        border-radius: 50%;
+      }
+
+      &-info {
+        &-name {
+          font-weight: 600;
+          line-height: 144%;
+          color: var(--neutral-color-100);
+        }
+
+        &-profession {
+          font-weight: 500;
+          line-height: 162%;
+          color: var(--neutral-color-150);
+        }
+      }
+    }
+
+    &-date {
+      font-weight: 500;
+      line-height: 150%;
+      color: var(--neutral-color-150);
+    }
+  }
+
+  &__body {
+    &-img {
+      margin-bottom: 80px;
+
+      @include mobile {
+        margin-bottom: 60px;
+      }
+    }
+
+    &-text {
+      margin-bottom: 56px;
+      max-width: 940px;
+      font-weight: 400;
+      line-height: 178%;
+      letter-spacing: 0.02em;
+      color: var(--neutral-color-100);
+    }
+
+    &-initial {
+      margin-bottom: 24px;
+      font-weight: 600;
+      line-height: 120%;
+      color: var(--neutral-color-100);
+
+      &-text {
+        margin-bottom: 56px;
+        max-width: 940px;
+        font-weight: 400;
+        line-height: 178%;
+        letter-spacing: 0.02em;
+        color: var(--neutral-color-100);
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 48px;
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    &-socials {
+      &-links {
+        @include flex-align-center;
+        gap: 32px;
+        margin-bottom: 16px;
+
+
+        &-share {
+          font-weight: 500;
+          line-height: 162%;
+          color: var(--neutral-color-100);
+        }
+      }
+    }
+
+    &-author {
+      &-written {
+        margin-bottom: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--neutral-color-150);
+      }
+
+      &-name {
+        margin-bottom: 16px;
+        font-weight: 600;
+        line-height: 131%;
+        letter-spacing: -0.03em;
+        color: var(--neutral-color-100);
+      }
+
+      &-profession {
+        margin-bottom: 16px;
+        font-weight: 500;
+        line-height: 162%;
+        color: var(--neutral-color-150);
+      }
+
+      &-descr {
+        max-width: 650px;
+        font-weight: 400;
+        line-height: 178%;
+        color: var(--neutral-color-100);
+      }
+    }
+  }
+}
