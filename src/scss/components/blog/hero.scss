@@ -7,7 +7,7 @@
 
   &-decors {
     &::after {
-      bottom: 485px;
+      bottom: 50%;
     }
   }
 
@@ -33,7 +33,6 @@
 
   &__subtitle {
     margin-bottom: 128px;
-    max-width: 674px;
     font-weight: 600;
     line-height: 131%;
     letter-spacing: -0.03em;
