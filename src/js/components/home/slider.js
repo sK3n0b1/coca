@@ -28,3 +28,50 @@ export const useTestimonialsSlider = () => {
     },
   });
 };
+
+export const useBlogSlider = () => {
+  new Swiper('.hero__slider-design', {
+    spaceBetween: 12,
+    slidesPerView: 'auto',
+    loop: true,
+    centeredSlides: false,
+    breakpoints: {
+      993: {
+        spaceBetween: 22,
+      },
+      769: {
+        spaceBetween: 32
+      }
+    },
+  });
+
+  new Swiper('.hero__slider-all', {
+    spaceBetween: 12,
+    slidesPerView: 'auto',
+    loop: true,
+    centeredSlides: false,
+    breakpoints: {
+      993: {
+        spaceBetween: 22,
+      },
+      769: {
+        spaceBetween: 32
+      }
+    },
+  });
+
+  new Swiper('.hero__slider-articles', {
+    spaceBetween: 12,
+    slidesPerView: 'auto',
+    loop: true,
+    centeredSlides: false,
+    breakpoints: {
+      993: {
+        spaceBetween: 22,
+      },
+      769: {
+        spaceBetween: 32
+      }
+    },
+  });
+};
