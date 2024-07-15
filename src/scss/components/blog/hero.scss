@@ -1,5 +1,5 @@
 .hero {
-  padding: 95px 0 168px;
+  padding: 95px 0;
 
   @include mini-desktop {
     padding: 75px 0 0;
@@ -64,23 +64,16 @@
   }
 
   &__tabs {
-    margin-bottom: 90px;
-
-    @include small-tablet {
-      margin-bottom: 40px;
-    }
-
     &-nav {
       display: flex;
-      gap: 16px;
+      gap: 5px;
 
-      @include mobile {
-        gap: 14px;
-        flex-direction: column;
+      @include small-tablet {
+        font-size: 14px;
       }
 
       @include mobile {
-        gap: 10px;
+        flex-direction: column;
       }
     }
 
