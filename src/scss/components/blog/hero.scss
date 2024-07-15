@@ -2,7 +2,7 @@
   padding: 95px 0 168px;
 
   @include mini-desktop {
-    padding: 75px 0 158px;
+    padding: 75px 0 0;
   }
 
   &-decors {
@@ -19,6 +19,7 @@
 
     @include mini-desktop {
       margin-bottom: 43px;
+      text-align: center;
     }
 
     @include tablet {
@@ -27,7 +28,6 @@
 
     @include small-tablet {
       margin-bottom: 23px;
-      text-align: center;
     }
   }
 
@@ -39,7 +39,9 @@
     color: var(--neutral-color-100);
 
     @include mini-desktop {
+      justify-content: center;
       margin-bottom: 100px;
+      text-align: center;
     }
 
     @include tablet {
@@ -48,16 +50,25 @@
 
     @include small-tablet {
       margin-bottom: 60px;
-      text-align: center;
     }
 
     @include mobile {
       margin-bottom: 40px;
     }
+
+    & br {
+      @include mini-desktop {
+        display: none;
+      }
+    }
   }
 
   &__tabs {
     margin-bottom: 90px;
+
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
 
     &-nav {
       display: flex;
@@ -156,8 +167,8 @@
     &-btns {
       @include flex-all-center;
       position: absolute;
-      top: 15%;
-      left: 44.4%;
+      top: 25%;
+      left: 43.8%;
       z-index: var(--z-index-2);
       border-radius: 50%;
       width: 80px;
@@ -170,12 +181,6 @@
       }
 
       @include tablet {
-        left: 38%;
-        width: 60px;
-        height: 60px;
-      }
-
-      @include small-tablet {
         display: none;
       }
     }
@@ -183,6 +188,27 @@
 
   &__article {
     max-width: 515px;
+
+    &-img {
+      width: 515px;
+      height: 428px;
+
+      @include tablet {
+        height: 300px;
+      }
+
+      @include small-tablet {
+        height: 282px;
+      }
+
+      @include mobile {
+        height: 228px;
+      }
+
+      @include small-mobile {
+        height: 188px;
+      }
+    }
 
     @include tablet {
       max-width: 315px;
@@ -193,7 +219,7 @@
     }
 
     @include small-mobile {
-        max-width: 250px;
+      max-width: 250px;
     }
 
     &-date {
@@ -225,7 +251,6 @@
     }
 
     &-descr {
-      max-width: 332px;
       font-weight: 500;
       font-size: 20px;
       line-height: 150%;

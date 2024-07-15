@@ -132,8 +132,16 @@
     &-medium {
       font-size: 18px;
 
-      @include mobile {
+      @include small-tablet {
         font-size: 16px;
+      }
+
+      @include mobile {
+        font-size: 14px;
+      }
+
+      @include small-mobile {
+        font-size: 12px;
       }
     }
 
