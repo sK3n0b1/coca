@@ -1,0 +1,123 @@
+.hero {
+  padding: 105px 0 160px;
+
+  &-decors {
+    &::before {
+      top: 68em;
+      left: 15em;
+    }
+  }
+
+  &__title {
+    margin-bottom: 118px;
+    max-width: 959px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+
+    @include tablet {
+      margin-bottom: 80px;
+      text-align: center;
+
+      & br {
+        @include mini-desktop {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    margin-bottom: 135px;
+    font-weight: 600;
+    line-height: 131%;
+    letter-spacing: -0.03em;
+    color: var(--neutral-color-100);
+
+    @include tablet {
+      justify-content: center;
+      margin-bottom: 80px;
+      text-align: center;
+    }
+
+    &::before {
+      transform: translateY(-85px);
+    }
+
+    &-text {
+      max-width: 738px;
+    }
+
+    &-img {
+      position: absolute;
+      top: 0;
+      left: 85%;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__slider {
+    &-btns {
+      @include flex-all-center;
+      position: absolute;
+      top: 25%;
+      left: 43.2%;
+      z-index: var(--z-index-2);
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      transform: translateX(-50%);
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    max-width: 502px;
+  }
+
+  &__item {
+    &-title {
+      max-width: 471px;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+      color: var(--neutral-color-100);
+    }
+
+    &-descr {
+      max-width: 494px;
+      font-weight: 500;
+      line-height: 178%;
+      color: var(--neutral-color-150);
+    }
+
+    &-btn {
+      padding: 16px 32px;
+      color: #fff;
+      background-color: #1d1e25;
+
+      svg {
+        width: 12px;
+        height: 12px;
+        transform: rotate(90deg);
+      }
+
+      svg path {
+        stroke: #fff;
+      }
+    }
+  }
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+body[data-theme='light'] .hero__subtitle-img {
+  filter: invert(100%);
+}

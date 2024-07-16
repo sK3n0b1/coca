@@ -91,13 +91,33 @@ export const useBlogArticlesSlider = () => {
         slidesPerView: 2,
       },
       381: {
-        slidesPerView: 'auto'
-      }
+        slidesPerView: 'auto',
+      },
     },
 
     navigation: {
       nextEl: '.articles__btn--next',
       prevEl: '.articles__btn--prev',
+    },
+  });
+};
+
+export const useAboutSlider = () => {
+  new Swiper('.hero__slider', {
+    loop: true,
+    slidesPerView: 1.5,
+    spaceBetween: 7,
+    centeredSlides: false,
+    breakpoints: {
+      1201: {
+        spaceBetween: 32,
+      },
+      993: {
+        slidesPerView: 2,
+      },
+      381: {
+        slidesPerView: 'auto',
+      },
     },
   });
 };
