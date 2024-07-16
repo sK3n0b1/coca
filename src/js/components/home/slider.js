@@ -80,20 +80,9 @@ export const useBlogArticlesSlider = () => {
   new Swiper('.articles__slider', {
     modules: [Navigation],
     loop: true,
-    slidesPerView: 1.5,
-    spaceBetween: 7,
+    slidesPerView: 'auto',
+    spaceBetween: 32,
     centeredSlides: false,
-    breakpoints: {
-      1201: {
-        spaceBetween: 32,
-      },
-      993: {
-        slidesPerView: 2,
-      },
-      381: {
-        slidesPerView: 'auto',
-      },
-    },
 
     navigation: {
       nextEl: '.articles__btn--next',
@@ -105,19 +94,13 @@ export const useBlogArticlesSlider = () => {
 export const useAboutSlider = () => {
   new Swiper('.hero__slider', {
     loop: true,
-    slidesPerView: 1.5,
-    spaceBetween: 7,
+    slidesPerView: 1.2,
+    spaceBetween: 32,
     centeredSlides: false,
     breakpoints: {
-      1201: {
-        spaceBetween: 32,
-      },
-      993: {
-        slidesPerView: 2,
-      },
       381: {
-        slidesPerView: 'auto',
-      },
-    },
+        slidesPerView: 'auto'
+      }
+    }
   });
 };
