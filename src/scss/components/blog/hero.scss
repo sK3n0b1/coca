@@ -66,14 +66,19 @@
   &__tabs {
     &-nav {
       display: flex;
-      gap: 5px;
+      gap: 30px;
+      margin-bottom: 80px;
 
       @include small-tablet {
-        font-size: 14px;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
       }
 
       @include mobile {
-        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 20px;
       }
     }
 
@@ -89,7 +94,6 @@
 
     &-btn {
       position: relative;
-      margin-bottom: 80px;
       font-weight: 600;
       line-height: 150%;
       color: var(--neutral-color-150);
