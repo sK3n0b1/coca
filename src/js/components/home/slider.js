@@ -40,8 +40,8 @@ export const useBlogSlider = () => {
         spaceBetween: 22,
       },
       769: {
-        spaceBetween: 32
-      }
+        spaceBetween: 32,
+      },
     },
   });
 
@@ -55,8 +55,8 @@ export const useBlogSlider = () => {
         spaceBetween: 22,
       },
       769: {
-        spaceBetween: 32
-      }
+        spaceBetween: 32,
+      },
     },
   });
 
@@ -70,8 +70,34 @@ export const useBlogSlider = () => {
         spaceBetween: 22,
       },
       769: {
-        spaceBetween: 32
+        spaceBetween: 32,
+      },
+    },
+  });
+};
+
+export const useBlogArticlesSlider = () => {
+  new Swiper('.articles__slider', {
+    modules: [Navigation],
+    loop: true,
+    slidesPerView: 1.5,
+    spaceBetween: 7,
+    centeredSlides: false,
+    breakpoints: {
+      1201: {
+        spaceBetween: 32,
+      },
+      993: {
+        slidesPerView: 2,
+      },
+      381: {
+        slidesPerView: 'auto'
       }
+    },
+
+    navigation: {
+      nextEl: '.articles__btn--next',
+      prevEl: '.articles__btn--prev',
     },
   });
 };
