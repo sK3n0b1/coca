@@ -4,16 +4,13 @@ import 'swiper/css';
 export const useAboutSlider = () => {
     new Swiper('.hero__slider', {
       loop: true,
-      slidesPerView: 1.2,
+      slidesPerView: 1.5,
       spaceBetween: 32,
       centeredSlides: false,
       breakpoints: {
-        381: {
-          slidesPerView: 1.5
+        576: {
+          slidesPerView: 'auto',
         },
-        577: {
-          slidesPerView: 'auto'
-        }
         
       }
     });

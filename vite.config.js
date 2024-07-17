@@ -17,11 +17,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './src/index.html',
-        about: './src/about.html',
         pricing: './src/pricing.html',
         contact: './src/contact.html',
         blog: './src/blog.html',
         detail: './src/detail.html',
+        about: './src/about.html',
       },
     },
   },
