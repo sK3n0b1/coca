@@ -9,11 +9,19 @@
     &::before {
       top: -10%;
       left: 25%;
+
+      @include mobile {
+        display: none;
+      }
     }
 
     &::after {
       top: 20%;
       left: 57%;
+
+      @include mobile {
+        display: none;
+      }
     }
   }
 
