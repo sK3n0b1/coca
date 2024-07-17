@@ -1,0 +1,158 @@
+.team {
+  &__container {
+    border-top: 1px solid var(--neutral-color-30);
+    padding: 160px 0;
+  }
+
+  &__top {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    &-title {
+      margin-bottom: 24px;
+      max-width: 903px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+    }
+
+    &-descr {
+      margin-bottom: 80px;
+      max-width: 534px;
+      font-weight: 500;
+      line-height: 178%;
+      color: var(--neutral-color-150);
+    }
+  }
+
+  &__slider {
+    margin-bottom: 100px;
+
+    &-btns {
+      @include flex-all-center;
+      position: absolute;
+      top: 32%;
+      left: 32%;
+      z-index: var(--z-index-2);
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      transform: translateX(-50%);
+
+      @include mini-desktop {
+        left: 38%;
+      }
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    max-width: 379px;
+  }
+
+  &__item {
+    &-img {
+      margin-bottom: 16px;
+    }
+
+    &-info {
+      @include flex-align-center;
+
+      @include tablet {
+        flex-direction: column;
+      }
+
+
+        &-one {
+          gap: 97px;
+
+          @include tablet {
+            gap: 10px;
+          }
+        }
+
+        &-two {
+          gap: 140px;
+
+          @include tablet {
+            gap: 10px;
+          }
+        }
+
+        &-three {
+          gap: 108px;
+
+          @include tablet {
+            gap: 10px;
+          }
+        }
+
+    }
+
+    &-social {
+      @include flex-align-center;
+      gap: 8px;
+
+      svg path {
+        fill: var(--neutral-color-100);
+      }
+    }
+
+    &-name {
+      margin-bottom: 8px;
+      max-width: 173px;
+      font-weight: 600;
+      line-height: 150%;
+      color: var(--neutral-color-100);
+
+      @include tablet {
+        font-size: 16px;
+      }
+    }
+
+    &-descr {
+      max-width: 215px;
+      font-weight: 500;
+      line-height: 150%;
+      color: var(--neutral-color-150);
+
+      @include small-mobile {
+        margin-top: 10px;
+        text-align: center;
+        transform: translateX(14px);
+      }
+    }
+  }
+
+  &__bottom {
+    @include flex-align-center;
+    gap: 71px;
+
+    @include tablet {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &-title {
+      max-width: 626px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      color: var(--neutral-color-100);
+    }
+
+    &-descr {
+      max-width: 506px;
+      font-weight: 500;
+      line-height: 178%;
+      color: var(--neutral-color-150);
+    }
+  }
+}

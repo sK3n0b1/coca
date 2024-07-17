@@ -6,8 +6,14 @@
   }
 
   &-decors {
+    &::before {
+      top: -10%;
+      left: 25%;
+    }
+
     &::after {
-      bottom: 50%;
+      top: 20%;
+      left: 57%;
     }
   }
 
@@ -160,6 +166,7 @@
 
   &__slider {
     position: relative;
+    margin-bottom: 40px;
 
     &-btns {
       @include flex-all-center;
